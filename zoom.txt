@@ -1,0 +1,1116 @@
+ private void zoom1(int pic, bool tran,int mode)
+        {
+            MethodInvoker inv = delegate
+            {
+                if (!tran)
+                {
+                    on1++;
+                    ezoom1 = false;
+                }
+                
+                if (on1 == 1 && allow_check)
+                {
+                    pictureBox1.Hide();
+                    pictureBox2.Hide();
+                    pictureBox3.Hide();
+                    pictureBox4.Hide();
+                    pictureBox5.Hide();
+                    pictureBox6.Hide();
+                    capture1.Visible = false;
+                    capture2.Visible = false;
+                    capture3.Visible = false;
+                    capture4.Visible = false;
+                    capture5.Visible = false;
+                    capture6.Visible = false;
+                    Hname1.Visible = false;
+                    Hname2.Visible = false;
+                    Hname3.Visible = false;
+                    Hname4.Visible = false;
+                    Hname5.Visible = false;
+                    Hname6.Visible = false;
+                    c1_11.Visible = false;
+                    c2_11.Visible = false;
+                    c3_11.Visible = false;
+                    c4_11.Visible = false;
+                    C5_11.Visible = false;
+                    C6_11.Visible = false;
+                    C7_11.Visible = false;
+                    c8_11.Visible = false;
+
+                    c1_16.Visible = false;
+                    c2_16.Visible = false;
+                    c3_16.Visible = false;
+                    c4_16.Visible = false;
+                    c5_16.Visible = false;
+                    c6_16.Visible = false;
+
+                    c1_12.Visible = false;
+                    c2_12.Visible = false;
+                    c3_12.Visible = false;
+                    c4_12.Visible = false;
+
+                    c8_13.Visible = false;
+                    c7_13.Visible = false;
+                    c6_13.Visible = false;
+                    c5_13.Visible = false;
+
+                    c8_14.Visible = false;
+                    c1_14.Visible = false;
+
+                    c4_15.Visible = false;
+                    c5_15.Visible = false;
+                    //c1_11.Visible = false; c1_12.Visible = false;
+                    //c2_11.Visible = false; c4_12.Visible = false;
+                    //c3h1_1.Visible = false; c1h3_1.Visible = false;
+                    //c4_11.Visible = false; c2h3_1.Visible = false;
+                    //c1h6_1.Visible = false; c5_14.Visible = false;
+                    //c2h6_1.Visible = false; c4_14.Visible = false;
+                    //c3h6_1.Visible = false; c4_15.Visible = false;
+                    //c4h6_1.Visible = false; c8_15.Visible = false;
+                    if (!tran) 
+                    {
+                        switch (pic)
+                        {
+                            case 1:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_1);
+                                pic_full1.Show();
+                                p811.Text = c8_11.Text;
+                                p821.Text = C7_11.Text;
+                                p831.Text = C6_11.Text;
+                                p841.Text = C5_11.Text;
+                                p851.Text = c4_11.Text;
+                                p861.Text = c3_11.Text;
+                                p871.Text = c2_11.Text;
+                                p881.Text = c1_11.Text;
+
+
+
+                                p811.Visible = true;
+                                p821.Visible = true;
+                                p831.Visible = true;
+                                p841.Visible = true;
+                                p851.Visible = true;
+                                p861.Visible = true;
+                                p871.Visible = true;
+                                p881.Visible = true;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                hinh1 = 1;
+                                break;
+                            case 2:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_2);
+                                pic_full1.Show();
+                                p411.Text = c1_12.Text;
+                                p421.Text = c2_12.Text;
+                                p431.Text = c3_12.Text;
+                                p441.Text = c4_12.Text;
+
+
+                                p411.Visible = true;
+                                p421.Visible = true;
+                                p431.Visible = true;
+                                p441.Visible = true;
+                                hinh1= 2;
+                                break;
+                            case 3:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_3);
+                                pic_full1.Show();
+                                p411.Text = c8_13.Text;
+                                p421.Text = c7_13.Text;
+                                p431.Text = c6_13.Text;
+                                p441.Text = c5_13.Text;
+
+
+                                p411.Visible = true;
+                                p421.Visible = true;
+                                p431.Visible = true;
+                                p441.Visible = true;
+                                hinh1 = 3;
+                                break;
+                            case 4:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_4);
+                                pic_full1.Show();
+                                p411.Text = c8_14.Text;
+                                p441.Text = c1_14.Text;
+
+                                p441.Visible = true;
+                                p411.Visible = true;
+                                hinh1 = 4;
+                                break;
+                            case 5:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_5);
+                                pic_full1.Show();
+                                p411.Text = c4_15.Text;
+                                p441.Text = c5_15.Text;
+
+                                p441.Visible = true;
+                                p411.Visible = true;
+                                hinh1 = 5;
+                                break;
+                            case 6:
+                                pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_6);
+                                pic_full1.Show();
+                                p811.Text = c1_16.Text;
+                                p821.Text = c2_16.Text;
+                                p831.Text = c3_16.Text;
+                                p841.Text = c4_16.Text;
+                                p851.Text = c5_16.Text;
+                                p861.Text = c6_16.Text;
+                                p871.Text = c7_16.Text;
+                                p881.Text = c8_16.Text;
+
+
+
+                                p811.Visible = true;
+                                p821.Visible = true;
+                                p831.Visible = true;
+                                p841.Visible = true;
+                                p851.Visible = true;
+                                p861.Visible = true;
+                                p871.Visible = true;
+                                p881.Visible = true;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                hinh1 = 6;
+                                break;
+
+                        }
+                    }
+                    if (tran) 
+                    {
+                        if(mode == 1) 
+                        {
+                            hinh1++;
+                            if (hinh1 > 6) 
+                            {
+                                ezoom1 = true;
+                                pic_full1.Image.Dispose();
+                                pic_full1.Hide();
+                                pictureBox1.Show();
+                                pictureBox2.Show();
+                                pictureBox3.Show();
+                                pictureBox4.Show();
+                                pictureBox5.Show();
+                                pictureBox6.Show();
+                                capture1.Visible = true;
+                                capture2.Visible = true;
+                                capture3.Visible = true;
+                                capture4.Visible = true;
+                                capture5.Visible = true;
+                                capture6.Visible = true;
+                                Hname1.Visible = true;
+                                Hname2.Visible = true;
+                                Hname3.Visible = true;
+                                Hname4.Visible = true;
+                                Hname5.Visible = true;
+                                Hname6.Visible = true;
+
+
+
+                                c1_11.Visible = true;
+                                c2_11.Visible = true;
+                                c3_11.Visible = true;
+                                c4_11.Visible = true;
+                                C5_11.Visible = true;
+                                C6_11.Visible = true;
+                                C7_11.Visible = true;
+                                c8_11.Visible = true;
+
+                                c1_16.Visible = true;
+                                c2_16.Visible = true;
+                                c3_16.Visible = true;
+                                c4_16.Visible = true;
+                                c5_16.Visible = true;
+                                c6_16.Visible = true;
+
+                                c1_12.Visible = true;
+                                c2_12.Visible = true;
+                                c3_12.Visible = true;
+                                c4_12.Visible = true;
+
+                                c8_13.Visible = true;
+                                c7_13.Visible = true;
+                                c6_13.Visible = true;
+                                c5_13.Visible = true;
+
+                                c8_14.Visible = true;
+                                c1_14.Visible = true;
+
+                                c4_15.Visible = true;
+                                c5_15.Visible = true;
+
+                                p811.Visible = false;
+                                p821.Visible = false;
+                                p831.Visible = false;
+                                p841.Visible = false;
+                                p851.Visible = false;
+                                p861.Visible = false;
+                                p871.Visible = false;
+                                p881.Visible = false;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                on1 = 0;
+                            }
+                        }
+                        if (mode == 2) 
+                        {
+                            hinh1--;
+                            if (hinh1 < 1) 
+                            {
+                                ezoom1 = true;
+                                pic_full1.Image.Dispose();
+                                pic_full1.Hide();
+                                pictureBox1.Show();
+                                pictureBox2.Show();
+                                pictureBox3.Show();
+                                pictureBox4.Show();
+                                pictureBox5.Show();
+                                pictureBox6.Show();
+                                capture1.Visible = true;
+                                capture2.Visible = true;
+                                capture3.Visible = true;
+                                capture4.Visible = true;
+                                capture5.Visible = true;
+                                capture6.Visible = true;
+                                Hname1.Visible = true;
+                                Hname2.Visible = true;
+                                Hname3.Visible = true;
+                                Hname4.Visible = true;
+                                Hname5.Visible = true;
+                                Hname6.Visible = true;
+
+
+
+                                c1_11.Visible = true;
+                                c2_11.Visible = true;
+                                c3_11.Visible = true;
+                                c4_11.Visible = true;
+                                C5_11.Visible = true;
+                                C6_11.Visible = true;
+                                C7_11.Visible = true;
+                                c8_11.Visible = true;
+
+                                c1_16.Visible = true;
+                                c2_16.Visible = true;
+                                c3_16.Visible = true;
+                                c4_16.Visible = true;
+                                c5_16.Visible = true;
+                                c6_16.Visible = true;
+
+                                c1_12.Visible = true;
+                                c2_12.Visible = true;
+                                c3_12.Visible = true;
+                                c4_12.Visible = true;
+
+                                c8_13.Visible = true;
+                                c7_13.Visible = true;
+                                c6_13.Visible = true;
+                                c5_13.Visible = true;
+
+                                c8_14.Visible = true;
+                                c1_14.Visible = true;
+
+                                c4_15.Visible = true;
+                                c5_15.Visible = true;
+
+                                p811.Visible = false;
+                                p821.Visible = false;
+                                p831.Visible = false;
+                                p841.Visible = false;
+                                p851.Visible = false;
+                                p861.Visible = false;
+                                p871.Visible = false;
+                                p881.Visible = false;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                on1 = 0;
+                            }
+                        }
+                        if (!ezoom1) 
+                        {
+                            switch (hinh1)
+                            {
+                                case 1:
+                                    if (pic_full1.Image != null) 
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_1);
+                                    pic_full1.Show();
+                                    p811.Text = c8_11.Text;
+                                    p821.Text = C7_11.Text;
+                                    p831.Text = C6_11.Text;
+                                    p841.Text = C5_11.Text;
+                                    p851.Text = c4_11.Text;
+                                    p861.Text = c3_11.Text;
+                                    p871.Text = c2_11.Text;
+                                    p881.Text = c1_11.Text;
+
+
+
+                                    p811.Visible = true;
+                                    p821.Visible = true;
+                                    p831.Visible = true;
+                                    p841.Visible = true;
+                                    p851.Visible = true;
+                                    p861.Visible = true;
+                                    p871.Visible = true;
+                                    p881.Visible = true;
+
+                                    p411.Visible = false;
+                                    p421.Visible = false;
+                                    p431.Visible = false;
+                                    p441.Visible = false;
+
+                                    break;
+                                case 2:
+                                    if (pic_full1.Image != null)
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_2);
+                                    pic_full1.Show();
+                                    p411.Text = c1_12.Text;
+                                    p421.Text = c2_12.Text;
+                                    p431.Text = c3_12.Text;
+                                    p441.Text = c4_12.Text;
+
+
+                                    p411.Visible = true;
+                                    p421.Visible = true;
+                                    p431.Visible = true;
+                                    p441.Visible = true;
+
+                                    break;
+                                case 3:
+                                    if (pic_full1.Image != null)
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_3);
+                                    pic_full1.Show();
+                                    p411.Text = c8_13.Text;
+                                    p421.Text = c7_13.Text;
+                                    p431.Text = c6_13.Text;
+                                    p441.Text = c5_13.Text;
+
+
+                                    p411.Visible = true;
+                                    p421.Visible = true;
+                                    p431.Visible = true;
+                                    p441.Visible = true;
+                                    break;
+                                case 4:
+                                    if (pic_full1.Image != null)
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_4);
+                                    pic_full1.Show();
+                                    p411.Text = c8_14.Text;
+                                    p441.Text = c1_14.Text;
+
+                                    p441.Visible = true;
+                                    p411.Visible = true;
+
+                                    break;
+                                case 5:
+                                    if (pic_full1.Image != null)
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_5);
+                                    pic_full1.Show();
+                                    p411.Text = c4_15.Text;
+                                    p441.Text = c5_15.Text;
+
+                                    p441.Visible = true;
+                                    p411.Visible = true;
+
+                                    break;
+                                case 6:
+                                    if (pic_full1.Image != null)
+                                    {
+                                        pic_full1.Image.Dispose();
+                                    }
+                                    pic_full1.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_1_6);
+                                    pic_full1.Show();
+                                    p811.Text = c1_16.Text;
+                                    p821.Text = c2_16.Text;
+                                    p831.Text = c3_16.Text;
+                                    p841.Text = c4_16.Text;
+                                    p851.Text = c5_16.Text;
+                                    p861.Text = c6_16.Text;
+                                    p871.Text = c7_16.Text;
+                                    p881.Text = c8_16.Text;
+
+
+
+                                    p811.Visible = true;
+                                    p821.Visible = true;
+                                    p831.Visible = true;
+                                    p841.Visible = true;
+                                    p851.Visible = true;
+                                    p861.Visible = true;
+                                    p871.Visible = true;
+                                    p881.Visible = true;
+
+                                    p411.Visible = false;
+                                    p421.Visible = false;
+                                    p431.Visible = false;
+                                    p441.Visible = false;
+                                    break;
+
+                            }
+                        }    
+                       
+                    }
+                }
+                if (on1 == 2 && allow_check)
+                {
+                    ezoom1 = false;
+                    pic_full1.Image.Dispose();
+                    pic_full1.Hide();
+                    pictureBox1.Show();
+                    pictureBox2.Show();
+                    pictureBox3.Show();
+                    pictureBox4.Show();
+                    pictureBox5.Show();
+                    pictureBox6.Show();
+                    capture1.Visible = true;
+                    capture2.Visible = true;
+                    capture3.Visible = true;
+                    capture4.Visible = true;
+                    capture5.Visible = true;
+                    capture6.Visible = true;
+                    Hname1.Visible = true;
+                    Hname2.Visible = true;
+                    Hname3.Visible = true;
+                    Hname4.Visible = true;
+                    Hname5.Visible = true;
+                    Hname6.Visible = true;
+                   
+
+
+                    c1_11.Visible = true;
+                    c2_11.Visible = true;
+                    c3_11.Visible = true;
+                    c4_11.Visible = true;
+                    C5_11.Visible = true;
+                    C6_11.Visible = true;
+                    C7_11.Visible = true;
+                    c8_11.Visible = true;
+
+                    c1_16.Visible = true;
+                    c2_16.Visible = true;
+                    c3_16.Visible = true;
+                    c4_16.Visible = true;
+                    c5_16.Visible = true;
+                    c6_16.Visible = true;
+
+                    c1_12.Visible = true;
+                    c2_12.Visible = true;
+                    c3_12.Visible = true;
+                    c4_12.Visible = true;
+
+                    c8_13.Visible = true;
+                    c7_13.Visible = true;
+                    c6_13.Visible = true;
+                    c5_13.Visible = true;
+
+                    c8_14.Visible = true;
+                    c1_14.Visible = true;
+
+                    c4_15.Visible = true;
+                    c5_15.Visible = true;
+
+                    p811.Visible = false;
+                    p821.Visible = false;
+                    p831.Visible = false;
+                    p841.Visible = false;
+                    p851.Visible = false;
+                    p861.Visible = false;
+                    p871.Visible = false;
+                    p881.Visible = false;
+
+                    p411.Visible = false;
+                    p421.Visible = false;
+                    p431.Visible = false;
+                    p441.Visible = false;
+                    on1 = 0;
+                }
+            };
+            this.Invoke(inv);
+        }
+        private int on2 = 0;
+
+        private void zoom2(int pic,bool tran,int mode)
+        {
+            MethodInvoker inv = delegate
+            {
+                if (!tran)
+                {
+                    on2++;
+                    ezoom2 = false;
+                }
+             
+                if (on2 == 1 && allow_check)
+                {
+                    pictureBox15.Hide();
+                    pictureBox16.Hide();
+                    pictureBox17.Hide();
+                    pictureBox18.Hide();
+                    pictureBox19.Hide();
+                    pictureBox20.Hide();
+                    capture_7.Visible = false;
+                    capture_8.Visible = false;
+                    capture_9.Visible = false;
+                    capture_10.Visible = false;
+                    capture_11.Visible = false;
+                    capture_12.Visible = false;
+                    Hname_7.Visible = false;
+                    Hname_8.Visible = false;
+                    Hname_9.Visible = false;
+                    Hname_10.Visible = false;
+                    Hname_11.Visible = false;
+                    Hname_12.Visible = false;
+
+                    c1_21.Visible = false;
+                    c2_21.Visible = false;
+                    c3_21.Visible = false;
+                    c4_21.Visible = false;
+                    c5_21.Visible = false;
+                    c6_21.Visible = false;
+                    c7_21.Visible = false;
+                    c8_21.Visible = false;
+
+                    c1_26.Visible = false;
+                    c2_26.Visible = false;
+                    c3_26.Visible = false;
+                    c4_26.Visible = false;
+                    c5_26.Visible = false;
+                    c6_26.Visible = false;
+
+                    c1_22.Visible = false;
+                    c2_22.Visible = false;
+                    c3_22.Visible = false;
+                    c4_22.Visible = false;
+
+                    c8_23.Visible = false;
+                    c7_23.Visible = false;
+                    c6_23.Visible = false;
+                    c5_23.Visible = false;
+
+                    c8_24.Visible = false;
+                    c1_24.Visible = false;
+
+                    c4_25.Visible = false;
+                    c5_25.Visible = false;
+                    if (!tran) 
+                    {
+                        switch (pic)
+                        {
+                            case 1:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_1);
+                                picfull_2.Show();
+                                p812.Text = c8_21.Text;
+                                p822.Text = c7_21.Text;
+                                p832.Text = c6_21.Text;
+                                p842.Text = c5_21.Text;
+                                p852.Text = c4_21.Text;
+                                p862.Text = c3_21.Text;
+                                p872.Text = c2_21.Text;
+                                p882.Text = c1_21.Text;
+
+
+
+                                p812.Visible = true;
+                                p822.Visible = true;
+                                p832.Visible = true;
+                                p842.Visible = true;
+                                p852.Visible = true;
+                                p862.Visible = true;
+                                p872.Visible = true;
+                                p882.Visible = true;
+
+                                p412.Visible = false;
+                                p422.Visible = false;
+                                p432.Visible = false;
+                                p442.Visible = false;
+                                hinh2 = 1;
+                                break;
+                            case 2:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_2);
+                                picfull_2.Show();
+                                p412.Text = c1_22.Text;
+                                p422.Text = c2_22.Text;
+                                p432.Text = c3_22.Text;
+                                p442.Text = c4_22.Text;
+
+
+                                p412.Visible = true;
+                                p422.Visible = true;
+                                p432.Visible = true;
+                                p442.Visible = true;
+                                hinh2 = 2;
+                                break;
+                            case 3:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_3);
+                                picfull_2.Show();
+                                p412.Text = c8_23.Text;
+                                p422.Text = c7_23.Text;
+                                p432.Text = c6_23.Text;
+                                p442.Text = c5_23.Text;
+
+
+                                p412.Visible = true;
+                                p422.Visible = true;
+                                p432.Visible = true;
+                                p442.Visible = true;
+                                hinh2 = 3;
+
+                                break;
+                            case 4:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_4);
+                                picfull_2.Show();
+                                p412.Text = c8_24.Text;
+                                p442.Text = c1_24.Text;
+
+                                p442.Visible = true;
+                                p412.Visible = true;
+                                hinh2 = 4;
+                                break;
+
+                            case 5:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_5);
+                                picfull_2.Show();
+                                p412.Text = c4_25.Text;
+                                p442.Text = c5_25.Text;
+
+                                p442.Visible = true;
+                                p412.Visible = true;
+                                hinh2 = 5;
+                                break;
+                            case 6:
+                                picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_6);
+                                picfull_2.Show();
+                                p812.Text = c1_26.Text;
+                                p822.Text = c2_26.Text;
+                                p832.Text = c3_26.Text;
+                                p842.Text = c4_26.Text;
+                                p852.Text = c5_26.Text;
+                                p862.Text = c6_26.Text;
+                                p872.Text = c7_26.Text;
+                                p882.Text = c8_26.Text;
+
+
+
+                                p812.Visible = true;
+                                p822.Visible = true;
+                                p832.Visible = true;
+                                p842.Visible = true;
+                                p852.Visible = true;
+                                p862.Visible = true;
+                                p872.Visible = true;
+                                p882.Visible = true;
+
+                                p412.Visible = false;
+                                p422.Visible = false;
+                                p432.Visible = false;
+                                p442.Visible = false;
+                                hinh2 = 6;
+                                break;
+
+                        }
+                    }
+                    if (tran) 
+                    {
+                        if (mode == 1) 
+                        {
+                            hinh2++;
+                            if (hinh2 > 6) 
+                            {
+                                ezoom2 = true;
+                                picfull_2.Image.Dispose();
+                                picfull_2.Hide();
+                                pictureBox15.Show();
+                                pictureBox16.Show();
+                                pictureBox17.Show();
+                                pictureBox18.Show();
+                                pictureBox19.Show();
+                                pictureBox20.Show();
+                                capture_7.Visible = true;
+                                capture_8.Visible = true;
+                                capture_9.Visible = true;
+                                capture_10.Visible = true;
+                                capture_11.Visible = true;
+                                capture_12.Visible = true;
+                                Hname_7.Visible = true;
+                                Hname_8.Visible = true;
+                                Hname_9.Visible = true;
+                                Hname_10.Visible = true;
+                                Hname_11.Visible = true;
+                                Hname_12.Visible = true;
+
+
+
+
+                                c1_21.Visible = true;
+                                c2_21.Visible = true;
+                                c3_21.Visible = true;
+                                c4_21.Visible = true;
+                                c5_21.Visible = true;
+                                c6_21.Visible = true;
+                                c7_21.Visible = true;
+                                c8_21.Visible = true;
+
+                                c1_26.Visible = true;
+                                c2_26.Visible = true;
+                                c3_26.Visible = true;
+                                c4_26.Visible = true;
+                                c5_26.Visible = true;
+                                c6_26.Visible = true;
+
+                                c1_22.Visible = true;
+                                c2_22.Visible = true;
+                                c3_22.Visible = true;
+                                c4_22.Visible = true;
+
+                                c8_23.Visible = true;
+                                c7_23.Visible = true;
+                                c6_23.Visible = true;
+                                c5_23.Visible = true;
+
+                                c8_24.Visible = true;
+                                c1_24.Visible = true;
+
+                                c4_25.Visible = true;
+                                c5_25.Visible = true;
+
+                                p812.Visible = false;
+                                p822.Visible = false;
+                                p832.Visible = false;
+                                p842.Visible = false;
+                                p852.Visible = false;
+                                p862.Visible = false;
+                                p872.Visible = false;
+                                p882.Visible = false;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                on2 = 0;
+                            }
+                        }
+                        if (mode == 2) 
+                        {
+                            hinh2--;
+                            if (hinh2 < 1)
+                            {
+                                ezoom2 = true;
+                                picfull_2.Image.Dispose();
+                                picfull_2.Hide();
+                                pictureBox15.Show();
+                                pictureBox16.Show();
+                                pictureBox17.Show();
+                                pictureBox18.Show();
+                                pictureBox19.Show();
+                                pictureBox20.Show();
+                                capture_7.Visible = true;
+                                capture_8.Visible = true;
+                                capture_9.Visible = true;
+                                capture_10.Visible = true;
+                                capture_11.Visible = true;
+                                capture_12.Visible = true;
+                                Hname_7.Visible = true;
+                                Hname_8.Visible = true;
+                                Hname_9.Visible = true;
+                                Hname_10.Visible = true;
+                                Hname_11.Visible = true;
+                                Hname_12.Visible = true;
+
+
+
+
+                                c1_21.Visible = true;
+                                c2_21.Visible = true;
+                                c3_21.Visible = true;
+                                c4_21.Visible = true;
+                                c5_21.Visible = true;
+                                c6_21.Visible = true;
+                                c7_21.Visible = true;
+                                c8_21.Visible = true;
+
+                                c1_26.Visible = true;
+                                c2_26.Visible = true;
+                                c3_26.Visible = true;
+                                c4_26.Visible = true;
+                                c5_26.Visible = true;
+                                c6_26.Visible = true;
+
+                                c1_22.Visible = true;
+                                c2_22.Visible = true;
+                                c3_22.Visible = true;
+                                c4_22.Visible = true;
+
+                                c8_23.Visible = true;
+                                c7_23.Visible = true;
+                                c6_23.Visible = true;
+                                c5_23.Visible = true;
+
+                                c8_24.Visible = true;
+                                c1_24.Visible = true;
+
+                                c4_25.Visible = true;
+                                c5_25.Visible = true;
+
+                                p812.Visible = false;
+                                p822.Visible = false;
+                                p832.Visible = false;
+                                p842.Visible = false;
+                                p852.Visible = false;
+                                p862.Visible = false;
+                                p872.Visible = false;
+                                p882.Visible = false;
+
+                                p411.Visible = false;
+                                p421.Visible = false;
+                                p431.Visible = false;
+                                p441.Visible = false;
+                                on2 = 0;
+                            }
+                        }
+                        if (!ezoom2) 
+                        {
+                            switch (hinh2)
+                            {
+                                case 1:
+                                    if (pic_full2.Image != null) 
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_1);
+                                    picfull_2.Show();
+                                    p812.Text = c8_21.Text;
+                                    p822.Text = c7_21.Text;
+                                    p832.Text = c6_21.Text;
+                                    p842.Text = c5_21.Text;
+                                    p852.Text = c4_21.Text;
+                                    p862.Text = c3_21.Text;
+                                    p872.Text = c2_21.Text;
+                                    p882.Text = c1_21.Text;
+
+
+
+                                    p812.Visible = true;
+                                    p822.Visible = true;
+                                    p832.Visible = true;
+                                    p842.Visible = true;
+                                    p852.Visible = true;
+                                    p862.Visible = true;
+                                    p872.Visible = true;
+                                    p882.Visible = true;
+
+                                    p412.Visible = false;
+                                    p422.Visible = false;
+                                    p432.Visible = false;
+                                    p442.Visible = false;
+                                    hinh2 = 1;
+                                    break;
+                                case 2:
+                                    if (pic_full2.Image != null)
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_2);
+                                    picfull_2.Show();
+                                    p412.Text = c1_22.Text;
+                                    p422.Text = c2_22.Text;
+                                    p432.Text = c3_22.Text;
+                                    p442.Text = c4_22.Text;
+
+
+                                    p412.Visible = true;
+                                    p422.Visible = true;
+                                    p432.Visible = true;
+                                    p442.Visible = true;
+                                    hinh2 = 2;
+                                    break;
+                                case 3:
+                                    if (pic_full2.Image != null)
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_3);
+                                    picfull_2.Show();
+                                    p412.Text = c8_23.Text;
+                                    p422.Text = c7_23.Text;
+                                    p432.Text = c6_23.Text;
+                                    p442.Text = c5_23.Text;
+
+
+                                    p412.Visible = true;
+                                    p422.Visible = true;
+                                    p432.Visible = true;
+                                    p442.Visible = true;
+                                    hinh2 = 3;
+
+                                    break;
+                                case 4:
+                                    if (pic_full2.Image != null)
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_4);
+                                    picfull_2.Show();
+                                    p412.Text = c8_24.Text;
+                                    p442.Text = c1_24.Text;
+
+                                    p442.Visible = true;
+                                    p412.Visible = true;
+                                    hinh2 = 4;
+                                    break;
+
+                                case 5:
+                                    if (pic_full2.Image != null)
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_5);
+                                    picfull_2.Show();
+                                    p412.Text = c4_25.Text;
+                                    p442.Text = c5_25.Text;
+
+                                    p442.Visible = true;
+                                    p412.Visible = true;
+                                    hinh2 = 5;
+                                    break;
+                                case 6:
+                                    if (pic_full2.Image != null)
+                                    {
+                                        pic_full2.Image.Dispose();
+                                    }
+                                    picfull_2.Image = Image.FromFile(system_config.Map_Path_File + @"\" + Parameter_app.IMAGE_FOLDER_PATH + "/" + path_2_6);
+                                    picfull_2.Show();
+                                    p812.Text = c1_26.Text;
+                                    p822.Text = c2_26.Text;
+                                    p832.Text = c3_26.Text;
+                                    p842.Text = c4_26.Text;
+                                    p852.Text = c5_26.Text;
+                                    p862.Text = c6_26.Text;
+                                    p872.Text = c7_26.Text;
+                                    p882.Text = c8_26.Text;
+
+
+
+                                    p812.Visible = true;
+                                    p822.Visible = true;
+                                    p832.Visible = true;
+                                    p842.Visible = true;
+                                    p852.Visible = true;
+                                    p862.Visible = true;
+                                    p872.Visible = true;
+                                    p882.Visible = true;
+
+                                    p412.Visible = false;
+                                    p422.Visible = false;
+                                    p432.Visible = false;
+                                    p442.Visible = false;
+                                    hinh2 = 6;
+                                    break;
+
+                            }
+                        }
+                    }
+                   
+                }
+                if (on2 == 2 && allow_check)
+                {
+                    ezoom2 = false;
+                    picfull_2.Image.Dispose();
+                    picfull_2.Hide();
+                    pictureBox15.Show();
+                    pictureBox16.Show();
+                    pictureBox17.Show();
+                    pictureBox18.Show();
+                    pictureBox19.Show();
+                    pictureBox20.Show();
+                    capture_7.Visible = true;
+                    capture_8.Visible = true;
+                    capture_9.Visible = true;
+                    capture_10.Visible = true;
+                    capture_11.Visible = true;
+                    capture_12.Visible = true;
+                    Hname_7.Visible = true;
+                    Hname_8.Visible = true;
+                    Hname_9.Visible = true;
+                    Hname_10.Visible = true;
+                    Hname_11.Visible = true;
+                    Hname_12.Visible = true;
+
+                   
+
+
+                    c1_21.Visible = true;
+                    c2_21.Visible = true;
+                    c3_21.Visible = true;
+                    c4_21.Visible = true;
+                    c5_21.Visible = true;
+                    c6_21.Visible = true;
+                    c7_21.Visible = true;
+                    c8_21.Visible = true;
+
+                    c1_26.Visible = true;
+                    c2_26.Visible = true;
+                    c3_26.Visible = true;
+                    c4_26.Visible = true;
+                    c5_26.Visible = true;
+                    c6_26.Visible = true;
+
+                    c1_22.Visible = true;
+                    c2_22.Visible = true;
+                    c3_22.Visible = true;
+                    c4_22.Visible = true;
+
+                    c8_23.Visible = true;
+                    c7_23.Visible = true;
+                    c6_23.Visible = true;
+                    c5_23.Visible = true;
+
+                    c8_24.Visible = true;
+                    c1_24.Visible = true;
+
+                    c4_25.Visible = true;
+                    c5_25.Visible = true;
+
+                    p812.Visible = false;
+                    p822.Visible = false;
+                    p832.Visible = false;
+                    p842.Visible = false;
+                    p852.Visible = false;
+                    p862.Visible = false;
+                    p872.Visible = false;
+                    p882.Visible = false;
+
+                    p411.Visible = false;
+                    p421.Visible = false;
+                    p431.Visible = false;
+                    p441.Visible = false;
+                    on2 = 0;
+                }
+            };
+            this.Invoke(inv);
+        }

@@ -1,0 +1,15 @@
+﻿1>------ Build started: Project: Camera_Check_Component, Configuration: Debug Any CPU ------
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(17,7,17,21): warning CS0105: The using directive for 'System.Drawing' appeared previously in this namespace
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Checking_Form_1.cs(17,7,17,21): warning CS0105: The using directive for 'System.Drawing' appeared previously in this namespace
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(28,36,28,52): warning CS0649: Field 'Camera_Check_Component.Camera_Check_component.Cam2VIDEO_Device' is never assigned to, and will always have its default value null
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(29,36,29,52): warning CS0649: Field 'Camera_Check_Component.Camera_Check_component.Cam3VIDEO_Device' is never assigned to, and will always have its default value null
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(30,36,30,52): warning CS0649: Field 'Camera_Check_Component.Camera_Check_component.Cam4VIDEO_Device' is never assigned to, and will always have its default value null
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(31,36,31,52): warning CS0649: Field 'Camera_Check_Component.Camera_Check_component.Cam5VIDEO_Device' is never assigned to, and will always have its default value null
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(32,36,32,52): warning CS0649: Field 'Camera_Check_Component.Camera_Check_component.Cam6VIDEO_Device' is never assigned to, and will always have its default value null
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(40,35,40,42): warning CS0169: The field 'Camera_Check_Component.Camera_Check_component.watcher' is never used
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(61,14,61,17): warning CS0414: The field 'Camera_Check_Component.Camera_Check_component.end' is assigned but its value is never used
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(62,14,62,24): warning CS0414: The field 'Camera_Check_Component.Camera_Check_component.allow_load' is assigned but its value is never used
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Camera_Check_component.cs(72,22,72,27): warning CS0414: The field 'Camera_Check_Component.Camera_Check_component.stop1' is assigned but its value is never used
+1>F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\Cam_Review.cs(28,26,28,29): warning CS0169: The field 'Camera_Check_Component.Cam_Review.img' is never used
+1>  Camera_Check_Component -> F:\VISUAL PROJECT\Camera_Check_Component\Camera_Check_Component\bin\Debug\Camera_Check_Component.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

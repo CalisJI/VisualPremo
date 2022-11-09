@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<System_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Map_Path_File>D:\IMAGE</Map_Path_File>
+  <Map_Path_File_2>D:\</Map_Path_File_2>
+  <Output_File>C:\Users\Admin\source\repos\Visual\Camera_Check_Component\bin\Debug\Output.txt</Output_File>
+  <DefaultComport>COM1</DefaultComport>
+  <DefaultCOMBaudrate>9600</DefaultCOMBaudrate>
+  <Camera1>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;2c504e7c&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera1>
+  <Camera2>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;39bc4b6a&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera2>
+  <Camera3>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;16e10e99&amp;1&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera3>
+  <Camera4>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;3ada9e09&amp;1&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera4>
+  <Camera5>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;8216df6&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera5>
+  <Camera6>@device:pnp:\\?\usb#vid_0ac8&amp;pid_3420&amp;mi_00#6&amp;299abf3e&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global</Camera6>
+  <add_cam>false</add_cam>
+  <Location_cam1_folder>110</Location_cam1_folder>
+  <Location_cam2_folder>110</Location_cam2_folder>
+  <Location_cam3_folder>110</Location_cam3_folder>
+  <Location_cam4_folder>109</Location_cam4_folder>
+  <Location_cam5_folder>106</Location_cam5_folder>
+  <Location_cam6_folder>105</Location_cam6_folder>
+  <Location_cam7_folder>0</Location_cam7_folder>
+  <Folder_load_check>103</Folder_load_check>
+  <Folder_index_tranfer>102</Folder_index_tranfer>
+  <same_folder_1>103</same_folder_1>
+  <same_folder_2>0</same_folder_2>
+  <old_Day1>0</old_Day1>
+  <old_Month1>0</old_Month1>
+  <old_Year1>0</old_Year1>
+  <old_DAY>0</old_DAY>
+  <old_MONTH>0</old_MONTH>
+  <old_YEAR>0</old_YEAR>
+  <new_Day>0</new_Day>
+  <new_Month>0</new_Month>
+  <new_Year>0</new_Year>
+  <pixel_cam1>0</pixel_cam1>
+  <pixel_cam2>0</pixel_cam2>
+  <pixel_cam3>0</pixel_cam3>
+  <pixel_cam4>0</pixel_cam4>
+  <pixel_cam5>0</pixel_cam5>
+  <pixel_cam6>0</pixel_cam6>
+  <pixel_cam7>0</pixel_cam7>
+  <SQL_server>DESKTOP-CDO0SQ2\WINCC</SQL_server>
+  <Database>ComponentState</Database>
+  <inf_process>16/9/2021 6:27:37 AM</inf_process>
+  <PN_Selector>3DC</PN_Selector>
+</System_config>
