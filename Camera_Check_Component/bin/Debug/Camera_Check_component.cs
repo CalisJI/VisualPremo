@@ -1697,6 +1697,7 @@ namespace Camera_Check_Component
 
             }
         }
+
         void Cam1VIDEO_Device_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
 
@@ -1715,6 +1716,34 @@ namespace Camera_Check_Component
             }
 
         }
+        //int count_frame = 0;
+        //void Cam1VIDEO_Device_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        //{
+
+        //    if (order_1)
+        //    {
+        //        if (!taked1)
+        //        {
+        //            if (count_frame <= 5)
+        //            {
+        //                count_frame++;
+        //            }
+        //            else
+        //            {
+        //                taked1 = true;
+        //                Live_Cam_1 = (Bitmap)eventArgs.Frame.Clone();
+        //                if (!backgroundWorker_1.IsBusy && Live_Cam_1 != null) backgroundWorker_1.RunWorkerAsync();
+        //                count_frame = 0;
+        //            }
+
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Cam1VIDEO_Device.SignalToStop();
+        //    }
+
+        //}
         #endregion
 
         #region ///////////////////////////////////////////////////////////////////////////////////////////////////////////////program process
@@ -4067,7 +4096,7 @@ namespace Camera_Check_Component
                 {
                     if (Pname.Length == 0)
                     {
-                        Process.Start(@"C:\Users\Admin\source\repos\comport\comport\bin\Debug\comport.exe");
+                        //Process.Start(@"C:\Users\Admin\source\repos\comport\comport\bin\Debug\comport.exe");
                         Connection frm_Connect = new Connection();
                         frm_Connect.ShowDialog();
                         //   Gen_check_Com.Checked = true;

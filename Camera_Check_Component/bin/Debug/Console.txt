@@ -56,3 +56,6 @@
 [11/9/2022 3:34:29 PM]The directory name C:\Users\Admin\source\repos\comport\comport\bin\Debug is invalid.
 [11/9/2022 3:34:32 PM]Could not find a part of the path 'C:\Users\Admin\source\repos\Visual\Camera_Check_Component\bin\Debug\Output.txt'.
 [11/9/2022 3:34:32 PM]Could not find a part of the path 'C:\Users\Admin\source\repos\Visual\Camera_Check_Component\bin\Debug\Output.txt'.
+[11/28/2022 11:13:05 PM]The directory name C:\Users\Admin\source\repos\comport\comport\bin\Debug is invalid.
+[11/29/2022 4:41:13 PM]The directory name C:\Users\Admin\source\repos\comport\comport\bin\Debug is invalid.
+[11/29/2022 4:42:32 PM]The directory name C:\Users\Admin\source\repos\comport\comport\bin\Debug is invalid.
